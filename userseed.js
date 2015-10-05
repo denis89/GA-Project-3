@@ -1,55 +1,61 @@
+var mongoose = require('mongoose');
+var User = require('./models/user');
+var seeder = require('mongoose-seed');
+
 var data = [
     { 
         'model': 'User',
-        'users': [
+        'documents': [
             {
                 'name': 'Robert Stewart',
                 'email': 'robertstewart@gmail.com',
                 'password': 'mckenzie',
-                'dob': '15/02/1970',
+                'dob': '1970-02-15',
                 'gender': 'Male',
-                'rating': 'Advanced Beginner'
+                'rating': 1
             },
             {
                 'name': 'Casey Cartwright',
                 'email': 'cartwrightcasey@gmail.com',
                 'password': 'writestuff',
-                'dob': '12/03/2001',
+                'dob': '2001-12-03',
                 'gender': 'Male',
-                'rating': 'Intermediate'
-            }
-                 {
+                'rating': 2
+            },
+            {
                 'name': 'Willa Morgan',
                 'email': 'willa-morgan@gmail.com',
                 'password': 'storming',
-                'dob': '09/12/1994',
+                'dob': '1994-09-12',
                 'gender': 'Female',
-                'rating': 'Advanced'
+                'rating': 3
             },
             {
-                'name': 'Samantha ',
-                'email': '',
-                'password': '',
-                'dob': '',
-                'gender': '',
-                'rating': ''
-            }
-                 {
-                'name': '',
-                'email': '',
-                'password': '',
-                'dob': '',
-                'gender': '',
-                'rating': ''
+                'name': 'Samantha Wilson',
+                'email': 'sammywilson@gmail.com',
+                'password': 'sparklepearsfruitmoon',
+                'dob': '1984-09-31',
+                'gender': 'Female',
+                'rating': 4
             },
             {
-                'name': '',
-                'email': '',
-                'password': '',
-                'dob': '',
-                'gender': '',
-                'rating': ''
+                'name': 'Alicia Stewart',
+                'email': 'aliciastewart@gmail.com',
+                'password': 'dancingnotqueenabba',
+                'dob': '1986-04-29',
+                'gender': 'Female',
+                'rating': 0
+            },
+            {
+                'name': 'Andy Edwards',
+                'email': 'andrew_edwards@gmail.com',
+                'password': 'tenniswayworldforever',
+                'dob': '1980-05-23',
+                'gender': 'Male',
+                'rating': 5
             }
         ]
     }
 ];  
+
+module.exports = data;
