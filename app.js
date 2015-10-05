@@ -28,15 +28,13 @@ app.post('/', function(req, res) {
     dob: data.dob,
     gender: data.gender,
     rating: data.rating
-  })
+  });
 
   newUser.save(function(err, user) {
     if(err) console.log(err);
     console.log("User has been created!");
     res.json(user);
-  })
-})
-
-
+  });
+});
 
 app.listen(port);
