@@ -9,6 +9,14 @@ var bodyParser = require('body-parser')
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
 
+//INDEX
+router.get('/', function(req, res){
+  User.find({}, function(err, users){
+    if(err) console.log(err)
+    res.json(users)
+  })
+})
+
 //CREATE
 router.post('/', function(req, res) {
   // console.log(req.body);
