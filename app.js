@@ -7,13 +7,8 @@ var mongoose = require('mongoose');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/sports-partner');
 
-app.set('view engine', 'jade');
-
-app.use(express.static(__dirname + '/public'));
-
 app.get('/', function(req, res){
-  res.render('index');
+  res.send('Hello World!');
 })
 
 app.listen(port);
-
