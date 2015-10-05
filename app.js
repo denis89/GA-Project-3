@@ -4,10 +4,24 @@ var port = process.env.PORT || 3000
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var User = require('./models/user');
+var seeder = require('mongoose-seed'),
+    data = require('./data.json');
 
 //database setup
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/sports-partner');
+seeder.connect('mongodb://localhost:27017/sports-partner', function() {
+//seeder code - all goes here?
+  // Load Mongoose models 
+  seeder.loadModels([
+      'app/user.js',
+  ]);
+  // Clear specified collections 
+  seeder.clearModels(['User'], function() {
+  // Callback to populate DB once collections have been cleared 
+  seeder.populateModels(data);
+  });
+});
+//seeder code
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
