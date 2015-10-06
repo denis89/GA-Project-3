@@ -1,7 +1,6 @@
 var express = require('express')
 var router = express.Router()
 
-var moongoose = require('mongoose')
 var User = require('../models/user')
 
 var bodyParser = require('body-parser')
@@ -18,7 +17,7 @@ router.get('/', function(req, res){
 })
 
 //CREATE
-router.post('/', function(req, res) {
+router.post('/', function(req, res){
   // console.log(req.body);
 
   var data = req.body;
@@ -31,11 +30,22 @@ router.post('/', function(req, res) {
     rating: data.rating
   });
 
-  newUser.save(function(err, user) {
+  newUser.save(function(err, user){
     if(err) console.log(err);
     console.log("User has been created!");
     res.json(user);
   });
 });
+
+//LOGIN
+
+router.post('/login', function(req, res){
+  User.findOne({email: req.body.email}, function(err, user){
+    if(err) console.log(err)
+    if(!user) return res.send('Incorrect username/password')
+    if(user.password !== req.body.password) return res.send('Incorrect username/password')
+    res.send('Why can\'t authentication be this easy?')
+  })
+})
 
 module.exports = router
