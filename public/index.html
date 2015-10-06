@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Login</title>
+  
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-  <form action="/users/login" method="POST">
-    <input type="text" id="email" name="email" placeholder="email">
-    <input type="password" id="password" name="password" placeholder="password">
-    <input type="submit">
+ <h1>WeSport</h1>
+
+  <form class="form-signin" action="/login" method="post">
+ <h2>Find your Sport Partner!</h2>
+   <h4> Here you can find all the possible sport partners!</h4>
+   <input type="email" id="email" name="email" placeholder="Enter your email address">
+  <input type="password" class="input-block-level" name="password" placeholder="Enter your password">
+  <input type="submit" value="login">
+   <br>
+   <a href="register.html">New User? Sign up here!</a>
   </form>
 </body>
 </html>
