@@ -1,11 +1,11 @@
 $(document).ready(function(){
   // console.log('Hello world!')
-  var thisMonth = moment().format('MMMM')
-  $('#month').text(thisMonth)
   addDates()
 })
 
 var addDates = function(){
+  var thisMonth = moment().format('MMMM')
+  $('#month').text(thisMonth)
   var daysAhead = moment().date(1).day()
   for(i = 0; i < 35; i++) {
     var currentDay = moment().date(2 - daysAhead + i)
