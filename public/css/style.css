@@ -2,6 +2,8 @@ body {
     background: url("../img/tennis.jpg") no-repeat center fixed;
     
     background-size: cover;
+    width: auto;
+    height: auto;
     
 }
 
@@ -29,3 +31,8 @@ h1 {
       h4{
         color:white;
       }
+
+form {
+  position: relative;
+  width: 30%;
+}
