@@ -1,0 +1,12 @@
+td {
+  width: 3rem;
+  height: 3rem;
+  vertical-align: top;
+}
+.other-month {
+  color: #c0c0c0;
+}
+
+.today {
+  color: #F00;
+}
