@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>WeSport</title>
+</head>
+<body background="./img/tennis.jpg">
+ <h1>Registered players</h1>
+ <ul id="player-list"></ul>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
+ <script src="/js/users.js"></script>
+ <script id="template" type="x-tmpl-mustache">
+ <li><strong>{{ name }}</strong> Rating: {{ rating }} Gender: {{ gender }}</li>
+ </script>
+</body>
+</html>
