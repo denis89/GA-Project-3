@@ -27,10 +27,10 @@ seeder.connect('mongodb://localhost:27017/sports-partner', function() {
 
 // Routes
 app.use(express.static(__dirname + '/public'));
-app.use('/users', require('./controllers/users'))
+// app.use('/users', require('./controllers/users'))
 
 app.get('/', function(req, res){
-  res.send('Hello World!');
+  res.send('index.html');
 })
 
 app.listen(port);

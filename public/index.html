@@ -4,19 +4,40 @@
   <meta charset="UTF-8">
   <title>Login</title>
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body background="./img/tennis.jpg">
  <h1>WeSport</h1>
 
-  <form class="form-signin" action="/login" method="post">
- <h2>Find your Sport Partner!</h2>
-   <h4> Here you can find all the possible sport partners!</h4>
-   <input type="email" id="email" name="email" placeholder="Enter your email address">
-  <input type="password" class="input-block-level" name="password" placeholder="Enter your password">
-  <input type="submit" value="login">
-   <br>
-   <a href="register.html">New User? Sign up here!</a>
+
+ 
+  <form class="form-signin" action="sports.html">
+  <h5>Find your Sport Partner!</h5>
+   <h6> Here you can find all the possible sport partners!</h6>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+     <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            </button>
+            <br>
+            <br>
+            <a href="register.html">New User? Sign up here!</a>
+        </div>
+      </div>
+     
+  
+   
   </form>
+
+
 </body>
 </html>

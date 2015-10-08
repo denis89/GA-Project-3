@@ -1,7 +1,17 @@
 $(document).ready(function(){
   // console.log('Hello world!')
   addDates()
+  addUser();
 })
+ 
+var addUser = function(){
+  $('#availabilities td').on('click', function() {
+    $(this).append('<a href="#"> <br>free</a>');
+    // grab the element we clicked on
+    // create the <a> tag
+    // add the tag at the end
+});
+}
 
 var addDates = function(){
   var thisMonth = moment().format('MMMM')
