@@ -5,7 +5,7 @@ $(document).ready(function(){
 })
  
 var addUser = function(){
-  $('#availabilities td').on('click', function() {
+  $('#profile td').on('click', function() {
     $(this).append('<a href="#"> <br>free</a>');
     // grab the element we clicked on
     // create the <a> tag

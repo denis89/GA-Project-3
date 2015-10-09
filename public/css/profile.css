@@ -1,13 +1,17 @@
-#profile {
-  float:left;
-}
-div {
-  position: relative;
-  margin: 0% 400px 400px 40%;
+
+      
+
+#map { height: 500px; width: 500px;
+      float: left;
+ }
+
+#picprofile {
+  margin: 0% 0%;
+  float: left;
 }
 
-h1 {
-  text-align: center;
+table {
+    margin: 0% 20%;
 }
 
 td {

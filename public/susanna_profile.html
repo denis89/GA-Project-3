@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <title>WeSport</title>
   <link rel="stylesheet" href="./css/profile.css">
-    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./js/availibility.js"></script>
+  <script src="./js/map.js"></script>
 </head>
 <body>
-  <h1>Susanna Profile</h1>
-
-    
-    <!-- Garry Table-->
+  <h1>Susanna's Profile</h1>
+   <img id="picprofile" src="./img/susanna.jpeg" width="160px" height="220px">
+  <div class="container"> Tennis Player </div>
+   <div id="map"></div>
+    <!-- Garry's Table-->
     <table id='profile' border="1">
-    Availbility
+    <h3>Availbility</h3>
       <thead>
         <tr>
           <th colspan="7" id="month">Month</th>
@@ -24,10 +27,10 @@
       <tbody>
         <tr>
           <td id="d0"></td>
-          <td id="d1"></td>
+          <td id="d1"><a href="booked.html">free</a></td>
           <td id="d2"></td>
           <td id="d3"></td>
-          <td id="d4"></td>
+          <td id="d4"><a href="booked.html">free</a></td>
           <td id="d5"></td>
           <td id="d6"></td>
         </tr>
@@ -38,14 +41,14 @@
           <td id="d10"></td>
           <td id="d11"></td>
           <td id="d12"></td>
-          <td id="d13"></td>
+          <td id="d13"><a href="booked.html">free</a></td>
         </tr>
         <tr>
           <td id="d14"></td>
           <td id="d15"></td>
           <td id="d16"></td>
           <td id="d17"></td>
-          <td id="d18"></td>
+          <td id="d18"><a href="booked.html">free</a></td>
           <td id="d19"></td>
           <td id="d20"></td>
         </tr>
@@ -56,30 +59,35 @@
           <td id="d24"></td>
           <td id="d25"></td>
           <td id="d26"></td>
-          <td id="d27"></td>
+          <td id="d27"><a href="booked.html">free</a></td>
         </tr>
         <tr>
           <td id="d28"></td>
           <td id="d29"></td>
           <td id="d30"></td>
           <td id="d31"></td>
-          <td id="d32"></td>
+          <td id="d32"><a href="booked.html">free</a></td>
           <td id="d33"></td>
           <td id="d34"></td>
         </tr>
       </tbody>
     </table>
 
-    <div>
-    Preferred Venues
-    <img src="./img/venue.png"
-    <div>
-
-
-  <!-- </script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   
+    <h3>Preferred Venues</h3>
+  
+ </div>
+ 
+   
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPvmHNkQ_pX_qlB9TKdu1pUESUtXWG-Tc&callback=initMap">
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.3/mustache.min.js"></script>
   <script src="./js/moment.min.js"></script>
-  <script src="./js/availibility.js"></script>
+  
+
+
+
+
 </body>
 </html>
